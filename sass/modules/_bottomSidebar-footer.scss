@@ -1,0 +1,137 @@
+.bottom-sidebar{
+	padding: 0;
+	>.ct-mask{
+		background: rgba(#003144, 0.89)
+	}
+	.widget{
+		
+		> .widget-header{
+			margin-bottom: 28px;
+		}
+		> .widget-title{ 
+			margin-bottom: 30px;
+		}
+	}
+	.widget-content{
+		line-height: 21px;
+		padding-bottom: 10px;
+	}
+
+}
+
+
+.ct-row-02{
+	margin-top: -30px;
+	> div{
+		margin-top: 30px;
+		border-left: 1px solid $cl-024;
+		&:nth-of-type(1){
+			border-left: none;
+		}
+	}
+	.ct-col-01 {
+		width: 34.959349%;
+		padding-right: 70px;
+	}
+	.ct-col-02, .ct-col-04{
+		width: 24.390243%;
+	}
+	.ct-col-03{
+		width: 16.260163%;
+	}
+}
+
+.bpc-widget-bs-text{
+	.bpc-bs-logo{
+		float: left;
+	}
+	.widget-content{
+		>p{
+			font-size: 15px;
+			line-height: 24px;
+		}
+		.contact{
+			margin-top: 23px;
+			li{
+				line-height: 25px;
+				span{
+					font-size: 14px;
+					&.fa-envelope{font-size: 11px}
+					line-height: 14px;
+					width: 25px;
+					margin-right: 10px;
+					border-right: 1px solid $cl-023;
+				}
+			}
+		}
+	}
+}
+.bpc-widget-bs-link{
+	.widget-content{
+		margin-top: -10px;
+	}
+	ul{
+		li{
+			a{
+				font-size: 13px;
+				line-height: 39px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+.text-red{
+	color: $color-010!important;
+}
+.bpc-page-footer{
+	margin-top: 130px;
+	margin-bottom: 60px;
+	font-family: $font-primary;
+	p{
+		color: $cl-001!important;
+	}
+}
+
+.bpc-page-footer.style-02{
+	p{
+		color: $color-primary!important;
+	}
+	background: $cl-001;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 0;
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		width: calc(100% + 2000px);
+		height: 100%;
+		top: 0;
+		left: -1000px;
+		background: $cl-001;
+	}
+	.bpc-social-links.style-02 ul li a{
+		color: $color-primary;
+	}
+	.bpc-scroll.style-02{
+		color: $color-primary;
+	}
+}
+
+
+.white-text-style.bottom-sidebar, .white-text-style .bottom-sidebar{
+	p, span, ul, li, a{color: $cl-008}
+	.bpc-scroll{
+		color: #fff;
+	}
+	.bpc-widget-bs-text .widget-content .contact {
+		li, span, a{
+			color: $cl-023;
+		}
+	}
+	.ct-item-12{
+		a, footer, footer span{
+			color: $cl-023;
+		}
+	}
+}

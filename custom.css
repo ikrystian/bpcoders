@@ -1,0 +1,16 @@
+.svg-wrap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	width: 179px;
+	margin: auto;
+}
+
+.oos-icon{
+	font-size: 2em;
+}
+
+.project-slider{
+	margin-bottom: 30px;
+}

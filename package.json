@@ -1,0 +1,25 @@
+{
+  "name": "bpcoders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/fasolqa/bpcoders.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/fasolqa/bpcoders/issues"
+  },
+  "homepage": "https://gitlab.com/fasolqa/bpcoders#README",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

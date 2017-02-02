@@ -6,18 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<link rel="shortcut icon" href="img/icons/favicon.ico" async>
-		<!-- build:css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css" async>
+		<link rel="shortcut icon" href="images/icons/favicon.ico" async>
 		<link rel="stylesheet" href="css/font-awesome.css" async>
 		<link rel="stylesheet" href="css/themify-icons.css" async>
-		<link rel="stylesheet" href="css/slider-pro.min.css" async>
-		<link rel="stylesheet" href="css/superfish.css" async>
-		<link rel="stylesheet" href="css/owl.carousel.min.css" async>
-		<link rel="stylesheet" href="css/slick.css" async>
-		<link rel="stylesheet" href="css/slick-theme.css" async>
-		<link rel="stylesheet" href="css/jquery.navgoco.css" async>
-		<link rel="stylesheet" href="css/style.css" async>
+		<!-- build:css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/slider-pro.min.css">
+		<link rel="stylesheet" href="css/superfish.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/jquery.navgoco.css">
+		<link rel="stylesheet" href="css/style.css">
 		<!-- endbuild -->
 	</head>
 	<body id="bpc-top">
@@ -30,24 +30,30 @@
 							<div class="mobile-navi-wrapper">
 								<span class="bpc-close-btn ti-close"></span>
 								<div class="mobile-logo">
-									<img src="img/logo.png" alt="">
+									<img src="images/logo.png" alt="">
 								</div>
 								<nav class="mobile-nav">
 									<ul class="mobile-menu">
 										<li>
-											<a href="#">home</a>
+											<a href="#bpc-top">home</a>
 										</li>
 										<li>
-											<a href="#">about</a>
+											<a href="#overlap-top">service</a>
 										</li>
 										<li>
-											<a href="#">portfolio</a>
+											<a href="#works">portfolio</a>
 										</li>
 										<li>
-											<a href="#">service</a>
+											<a href="#about">about</a>
 										</li>
 										<li>
-											<a href="#">contact</a>
+											<a href="#testimonial">Testimonial</a>
+										</li>
+										<li>
+											<a href="#skills">Skills</a>
+										</li>
+										<li>
+											<a href="#contact">contact</a>
 										</li>
 									</ul>
 								</nav>
@@ -60,7 +66,7 @@
 									<a href="#bpc-top">home</a>
 								</li>
 								<li>
-									<a href="#overlap-top">about</a>
+									<a href="#overlap-top">service</a>
 								</li>
 								<li>
 									<a href="#works">portfolio</a>
@@ -72,7 +78,7 @@
 					<div class="col-md-2 col-sm-4 col-xs-4 header-center">
 						<div class="bpc-logo">
 							<a href="#">
-								<img src="img/logo.png" alt="">
+								<img src="images/logo.png" alt="">
 							</a>
 							<p>Creative Studios</p>
 						</div>
@@ -83,13 +89,13 @@
 						<nav class="main-nav right">
 							<ul class="main-menu sf-menu">
 								<li>
-									<a href="#">service</a>
+									<a href="#testimonial">Testimonial</a>
 								</li>
 								<li>
-									<a href="#">blog</a>
+									<a href="#skills">Skills</a>
 								</li>
 								<li>
-									<a href="#">contact</a>
+									<a href="#contact">contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -139,7 +145,7 @@
 									<div>
 										<div>
 											<p class="fa fa-user-secret"></p>
-											<p>about</p>
+											<p>service</p>
 										</div>
 									</div>
 								</div>
@@ -273,8 +279,8 @@
 								<ul class="masonry-container portfolio-box row ct-row-01">
 									<li class="ul-ms-item show col-md-3 col-sm-6 col-xs-12" data-val="2,4">
 										<article class="entry-item ct-item-03">
-											<div class="view item illustration design"> <a class="portfolio-details" href="/works/nieczytamlistow.html">
-												<div class="portfolio-image-container"> <img alt="" class="img-responsive" src="/works/images/nieczytamlistow.jpg">
+											<div class="view item illustration design"> <a class="portfolio-details" href="works/nieczytamlistow.html">
+												<div class="portfolio-image-container"> <img alt="" class="img-responsive" src="works/images/nieczytamlistow.jpg">
 													<div class="portfolio-intro-details">
 														<div class="pull-left prftl-det">
 															<p>Nieczytamlistow.pl</p>
@@ -311,7 +317,7 @@
 					<!-- widget -->
 				</section>
 				<!-- bpc-area-0 -->
-				<section class="bpc-area bpc-area-14 bpc-area-no-space">
+				<section class="bpc-area bpc-area-14 bpc-area-no-space" id="about">
 					<div class="row ct-row-01 ul-mh">
 						<div class="col-md-6 col-sm-12 col-xs-12 sj-plw">
 							<img class="bpc-bg-image" src="images/1.jpg" alt="">
@@ -504,7 +510,7 @@
 			<section class="bpc-area bpc-area-17 white-text-style">
 				<img class="bpc-bg-image" src="images/testimonial.jpg" alt="">
 				<div class="container">
-					<div class="widget bpc-widget-slick-01">
+					<div class="widget bpc-widget-slick-01" id="testimonial">
 						<header class="widget-header text-center">
 							<img src="images/clients/1.png" alt="">
 							<h3 class="widget-title style-02">WHAT OUR CLIENTS SAY</h3>
@@ -601,7 +607,7 @@
 				<!-- container -->
 			</section>
 				<!-- bpc-area-17 -->
-				<section class="bpc-area bpc-area-11">
+				<section class="bpc-area bpc-area-11" id="skills">
 					<div class="container">
 						<div class="widget bpc-widget-article-list-02">
 							<header class="widget-header meta-header">
@@ -725,7 +731,7 @@
 					<!-- container -->
 				</section>
 				<!-- bpc-area-11 -->
-				<section class="bpc-area bpc-area-12">
+				<section class="bpc-area bpc-area-12" id="contact">
 					<div class="container">
 						<div class="widget bpc-widget-form-01">
 							<header class="widget-header text-center">
@@ -814,23 +820,23 @@
 			<!-- bottom sidebar -->
 		</div>
 		<!-- build:js -->
-		<script type="text/javascript" src="js/jquery-2.2.4.min.js" async></script>
-		<script type="text/javascript" src="js/superfish.min.js" async></script>
-		<script type="text/javascript" src="js/jquery.sliderPro.min.js" async></script>
-		<script type="text/javascript" src="js/bootstrap.min.js" async></script>
-		<script type="text/javascript" src="js/jquery.matchHeight.js" async></script>
-		<script type="text/javascript" src="js/masonry.pkgd.min.js" async></script>
-		<script type="text/javascript" src="js/imagesloaded.pkgd.min.js" async></script>
-		<script type="text/javascript" src="js/owl.carousel.min.js" async></script>
-		<script type="text/javascript" src="js/jquery.validate.min.js" async></script>
-		<script type="text/javascript" src="js/slick.min.js" async></script>
-		<script type="text/javascript" src="js/jquery.navgoco.min.js" async></script>
-		<script src="js/jquery.infinitescroll.min.js" async></script>
-		<script src="js/flexslider/jquery.flexslider-min.js" async></script>
-		<script src="js/jquery.isotope.min.js" async></script>
-		<script src="js/portfolio.js" async></script>
-		<script type="text/javascript" src="js/custom.js" async></script>
-		<script src="js/vivus.min.js" async></script>
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="js/superfish.min.js"></script>
+		<script type="text/javascript" src="js/jquery.sliderPro.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.matchHeight.js"></script>
+		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/jquery.navgoco.min.js"></script>
+		<script src="js/jquery.infinitescroll.min.js"></script>
+		<script src="js/flexslider/jquery.flexslider-min.js"></script>
+		<script src="js/jquery.isotope.min.js"></script>
+		<script src="js/portfolio.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script src="js/vivus.min.js"></script>
 		<!-- endbuild -->
 		<script>
 		$(document).ready(function(){

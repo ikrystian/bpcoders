@@ -29,6 +29,13 @@ jQuery(document).ready(function() {
             jQuery(this).parent().attr('href', '#');
         });
     }
+jQuery('.main-nav a').on('click', function(e){
+    e.preventDefault();
+    var targt = $(this).attr('href');
+    console.log(targt);
+    $("html, body").delay(100).animate({ scrollTop: $(targt).offset().top }, 500);
+
+});
 
 
     /*_____________ slider pro _____________*/
@@ -38,14 +45,15 @@ jQuery(document).ready(function() {
             width: 1920,
             height: 1080,
             forceSize: 'fullWidth',
-            arrows: true,
+            arrows: false,
             buttons: false,
-            fadeArrows: true,
+            fadeArrows: false,
             autoplay: false,
             autoScaleLayers: true,
             responsive: true,
             slideDistance: 0,
-            autoplayDelay: 5000,    
+            autoplayDelay: 5000,  
+            touchSwipe: false  
         });
     }
 

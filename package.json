@@ -19,9 +19,16 @@
   "devDependencies": {
     "browser-sync": "^2.18.7",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-html-replace": "^1.6.2",
     "gulp-sass": "^3.1.0",
-    "gulp-webserver": "^0.9.1"
+    "gulp-uglify": "^2.0.1",
+    "gulp-webserver": "^0.9.1",
+    "pump": "^1.0.2",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "gulp-uglifycss": "^1.0.6"
   }
 }

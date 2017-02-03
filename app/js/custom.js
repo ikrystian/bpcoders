@@ -6,17 +6,17 @@
  *  http://www.gnu.org/licenses/gpl.html
  **/
 
- 
+
 "use strict";
 
 jQuery(document).ready(function() {
-    
+
     /*_____________ menu _____________*/
     if (jQuery('.main-menu').length) {
         jQuery('.main-menu').superfish({
             delay:       500,                            // one second delay on mouseout
             animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation
-            speed:       'fast',                          // faster animation speed 
+            speed:       'fast',                          // faster animation speed
         });
     }
     if (jQuery('.mobile-menu').length) {
@@ -52,8 +52,8 @@ jQuery('.main-nav a').on('click', function(e){
             autoScaleLayers: true,
             responsive: true,
             slideDistance: 0,
-            autoplayDelay: 5000,  
-            touchSwipe: false  
+            autoplayDelay: 5000,
+            touchSwipe: false
         });
     }
 
@@ -69,7 +69,7 @@ jQuery('.main-nav a').on('click', function(e){
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
             slideSpeed: 4000,
-        }); 
+        });
     }
 
     var owl_3 = jQuery('.owl-carousel-03');
@@ -83,7 +83,7 @@ jQuery('.main-nav a').on('click', function(e){
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
             slideSpeed: 10000,
-        }); 
+        });
     }
 
     var owl_4 = jQuery('.owl-carousel-04');
@@ -98,7 +98,7 @@ jQuery('.main-nav a').on('click', function(e){
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
             slideSpeed: 10000,
-        }); 
+        });
     }
     var owl_5 = jQuery('.owl-carousel-05');
     if(owl_5.length){
@@ -112,14 +112,14 @@ jQuery('.main-nav a').on('click', function(e){
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
             slideSpeed: 10000,
-        }); 
+        });
     }
     /*_____________ slick  _____________*/
     if (jQuery('.slick-01.slick-content').length) {
         jQuery('.slick-01.slick-content').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,       
+            arrows: true,
             prevArrow: "<div class='bpc-prev'>PREV</div>",
             nextArrow: "<div class='bpc-next'>next</div>",
             asNavFor: '.slick-01.slick-thumb',
@@ -130,10 +130,10 @@ jQuery('.main-nav a').on('click', function(e){
         jQuery('.slick-01.slick-thumb').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
-            asNavFor: '.slick-01.slick-content',                
+            asNavFor: '.slick-01.slick-content',
             focusOnSelect: true,
             centerMode: true,
-            arrows: false,  
+            arrows: false,
             centerPadding: '0',
 
         });
@@ -143,7 +143,7 @@ jQuery('.main-nav a').on('click', function(e){
         jQuery('.slick-02').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,       
+            arrows: true,
             prevArrow: "<span class='bpc-prev fa fa-angle-left'></span>",
             nextArrow: "<span class='bpc-next fa fa-angle-right'></span>",
         });
@@ -169,20 +169,20 @@ jQuery('.main-nav a').on('click', function(e){
             });
         });
     }
-    
+
 
 
 
     /*_____________ set background image _____________*/
-    
-    if(jQuery('.bpc-bg-image').length){        
+
+    if(jQuery('.bpc-bg-image').length){
         jQuery(".bpc-bg-image").each(function(){
             var imageUrl = jQuery(this).attr("src");
-            jQuery(this).parent().css({'background-image': 'url(' + imageUrl + ')', 'background-size':'cover',     
+            jQuery(this).parent().css({'background-image': 'url(' + imageUrl + ')', 'background-size':'cover',
                 'background-position': 'center'
             });
             jQuery(this).addClass("hidden");
-        });     
+        });
     }
 
     /*_____________ match height _____________*/
@@ -197,7 +197,7 @@ jQuery('.main-nav a').on('click', function(e){
 
 
     /*_____________ masonry _____________*/
-    
+
     if(jQuery('.ul-ms').length){
         imagesLoaded(jQuery('.ul-ms'), function(){
             jQuery('.ul-ms').masonry({
@@ -288,7 +288,7 @@ jQuery('.main-nav a').on('click', function(e){
             .done(function(data) {
 
                 var pos_ins_data =  button.prev();
-                var items = jQuery(data).find('.ul-mh > li');               
+                var items = jQuery(data).find('.ul-mh > li');
                 if(items.length){
                     jQuery.each(items, function(items, index){
                         jQuery(pos_ins_data).append(jQuery(this)).children().matchHeight();
@@ -301,7 +301,7 @@ jQuery('.main-nav a').on('click', function(e){
                 // } else{
                 //  button.addClass("hidden");
                 // }
-                
+
             });
             button.prev().children().matchHeight();
 
@@ -320,7 +320,7 @@ jQuery('.main-nav a').on('click', function(e){
         jQuery(".bpc-tab-nav").each(function(){
             jQuery(".bpc-tab-nav").on('click',function(){
                 jQuery(this).parent().find(".bpc-tab-nav").removeClass("active");
-                jQuery(this).addClass("active");    
+                jQuery(this).addClass("active");
                 jQuery(this).parents(".widget").find(".bpc-tab-content").removeClass("show");
                 var content = jQuery(this).children("a").attr('href');
                 jQuery(content).addClass("show");
@@ -328,13 +328,13 @@ jQuery('.main-nav a').on('click', function(e){
             });
         });
     }
-    
 
 
-    /*_____________ padding _____________*/ 
+
+    /*_____________ padding _____________*/
 
     function sj_area_space(){
-        var w_w  = jQuery(window).width(), 
+        var w_w  = jQuery(window).width(),
         ct_w = jQuery('.container').width(),
         sp_w = (w_w - ct_w)/2,
         pl_w = jQuery('.sj-plw'),
@@ -359,7 +359,7 @@ jQuery('.main-nav a').on('click', function(e){
     if (jQuery(".ct-btn-01").length) {
         jQuery(".ct-btn-01").parent().addClass("ct-btn-01-parent")
     }
-    
+
 
 
     /*_____________ dropdown btn _____________*/
@@ -410,7 +410,7 @@ jQuery('.main-nav a').on('click', function(e){
     }
 
     /*_____________ remove product _____________*/
-    
+
     var rm_item_1 = jQuery('.rm-item');
     if(rm_item_1.length) {
         jQuery(rm_item_1).each(function() {
@@ -421,7 +421,7 @@ jQuery('.main-nav a').on('click', function(e){
         });
     }
 
-    /*_____________ UI Slider _____________*/   
+    /*_____________ UI Slider _____________*/
 
 
     var md_woo_pf = jQuery('.widget_price_filter');
@@ -445,9 +445,9 @@ jQuery('.main-nav a').on('click', function(e){
         uimin_1.text( "$" + uislider_1.slider( "values", 0 ));
         uimax_1.text( "$" + uislider_1.slider( "values", 1 ));
     }
-    
+
     if(jQuery('.wc-prettyphoto').length){
-        jQuery('.wc-prettyphoto').find("a[data-rel ^='prettyPhoto']").prettyPhoto(); 
+        jQuery('.wc-prettyphoto').find("a[data-rel ^='prettyPhoto']").prettyPhoto();
     }
 
     /*--- MAP ---*/
@@ -483,7 +483,7 @@ jQuery('.main-nav a').on('click', function(e){
             lat: lat,
             lng: lng,
             title: place,
-            icon: iconBase 
+            icon: iconBase
         });
 
     }
@@ -514,7 +514,7 @@ jQuery('.main-nav a').on('click', function(e){
                     var m_filter_val = jQuery(this).data('val');
 
                     container_1.find('.ul-ms-item').each(function(){
-                        var m_item_val = jQuery(this).data('val').toString().split(',');                
+                        var m_item_val = jQuery(this).data('val').toString().split(',');
                         var a = m_item_val.indexOf(m_filter_val.toString()) > -1;
 
                         if (m_filter_val == "*") {
@@ -523,12 +523,12 @@ jQuery('.main-nav a').on('click', function(e){
                         } else {
                             if ( a == true) {
                                 jQuery(this).removeClass('hide');
-                                jQuery(this).addClass('show');  
+                                jQuery(this).addClass('show');
                             } else {
                                 jQuery(this).removeClass('show');
                                 jQuery(this).addClass('hide');
                             }
-                        }                               
+                        }
                     });
                     container_1.masonry('layout');
 
@@ -562,7 +562,7 @@ jQuery('.main-nav a').on('click', function(e){
                     var m_filter_val = jQuery(this).data('val');
 
                     container_1.find('.ul-ms-item').each(function(){
-                        var m_item_val = jQuery(this).data('val').toString().split(',');                
+                        var m_item_val = jQuery(this).data('val').toString().split(',');
                         var a = m_item_val.indexOf(m_filter_val.toString()) > -1;
 
                         if (m_filter_val == "*") {
@@ -571,12 +571,12 @@ jQuery('.main-nav a').on('click', function(e){
                         } else {
                             if ( a == true) {
                                 jQuery(this).removeClass('hide');
-                                jQuery(this).addClass('show');  
+                                jQuery(this).addClass('show');
                             } else {
                                 jQuery(this).removeClass('show');
                                 jQuery(this).addClass('hide');
                             }
-                        }                               
+                        }
                     });
                     container_1.masonry('layout');
 
@@ -593,5 +593,9 @@ jQuery('.main-nav a').on('click', function(e){
         var item_height = jQuery(".ct-item-03").height();
         jQuery(".ct-item-02").css("height", 2*item_height + 'px');
     }
-////////////////////////////////////////////
+		new Vivus('web-design-svg', {type: 'oneByOne', duration: 300, file: 'images/design.svg'});
+		new Vivus('web-development-svg', {type: 'oneByOne', duration: 300, file: 'images/web.svg'});
+		new Vivus('wordpress-svg', {type: 'oneByOne', duration: 300, file: 'images/wp.svg'});
+		new Vivus('branding-svg', {type: 'oneByOne', duration: 300, file: 'images/brand.svg'});
+
 });

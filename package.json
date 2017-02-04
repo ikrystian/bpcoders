@@ -22,13 +22,18 @@
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-html-replace": "^1.6.2",
+    "gulp-postcss": "^6.3.0",
     "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
     "gulp-uglify": "^2.0.1",
     "gulp-webserver": "^0.9.1",
     "pump": "^1.0.2",
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
+    "autoprefixer": "^6.7.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-minify-html": "^1.0.6",
     "gulp-uglifycss": "^1.0.6"
   }
 }

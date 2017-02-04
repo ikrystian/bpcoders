@@ -1,12 +1,3 @@
-/**
- * http://kopatheme.com
- * Copyright (c) 2016 Kopatheme
- *
- * Licensed under the GPL license:
- *  http://www.gnu.org/licenses/gpl.html
- **/
-
-
 "use strict";
 
 jQuery(document).ready(function() {

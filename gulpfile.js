@@ -8,6 +8,12 @@ var pump = require('pump');
 var uglifycss = require('gulp-uglifycss');
 var clean = require('gulp-clean');
 var runSequence = require('run-sequence').use(gulp);
+var postcss      = require('gulp-postcss');
+var sourcemaps   = require('gulp-sourcemaps');
+var autoprefixer = require('autoprefixer');
+var htmlmin = require('gulp-htmlmin');
+
+
 gulp.task('sass', function() {
     return gulp.src("./app/sass/**/*.scss")
         .pipe(sass())
@@ -23,13 +29,19 @@ gulp.task('replace', function() {
         'css': 'css/all.css',
         'js': 'js/all.js'
     }))
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('./temp'));
+});
+
+gulp.task('minify', function() {
+  return gulp.src('./temp/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./build/'));
 });
 
 gulp.task('css', function() {
   return gulp.src([
-    "./app/css/bootstrap.min.css", 
-    "./app/css/slider-pro.min.css", 
+    "./app/css/bootstrap.min.css",
+    "./app/css/slider-pro.min.css",
     "./app/css/superfish.css",
     "./app/css/owl.carousel.min.css",
     "./app/css/slick.css",
@@ -39,6 +51,15 @@ gulp.task('css', function() {
     ])
     .pipe(concat('all.css'))
     .pipe(gulp.dest('./temp/css'));
+});
+
+gulp.task('autoprefixer', function () {
+
+    return gulp.src('./temp/css/*.css')
+        .pipe(sourcemaps.init())
+        .pipe(postcss([ autoprefixer() ]))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./temp/css/'));
 });
 
 gulp.task('move', function(){
@@ -92,7 +113,7 @@ gulp.task('compress-js', function () {
   );
 });
 
- 
+
 gulp.task('compress-css', function () {
   gulp.src('./temp/**/*.css')
     .pipe(uglifycss({
@@ -122,5 +143,5 @@ gulp.task('serve', ['sass'], function() {
 });
 
 gulp.task('build', function() {
-  runSequence('replace', 'sass', 'css', 'js', 'compress-css', 'compress-js', 'move', 'clean');
+  runSequence('replace', 'sass', 'css', 'autoprefixer', 'js', 'compress-css', 'compress-js', 'minify', 'move');
 });

@@ -709,3 +709,14 @@
 		left: 10px!important;
 	}
 }
+
+#logo{
+	img{
+		transition: all 0.1s ease-in-out;
+	}
+	a:active{
+		img{
+			transform: scale(0.9);
+		}
+	}
+}

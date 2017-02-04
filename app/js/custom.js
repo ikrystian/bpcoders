@@ -578,6 +578,20 @@ jQuery('.main-nav a').on('click', function(e){
         });
     }
 
+    /*bonus*/
+    var count = 0;
+    var farmImage = 'images/15/2.jpg';
+    $('#logo').on('click', function(e){
+        e.preventDefault();
+        count ++;
+        if(count == 10){
+            console.log('siup');
+            $('.sp-image-bg')
+                .attr('src', farmImage)
+                .attr('data-src', farmImage);
+        }
+    });
+
 
     /*_____________  _____________*/
     if (jQuery(".ct-item-03").length && jQuery(".ct-item-02").length) {
@@ -588,5 +602,7 @@ jQuery('.main-nav a').on('click', function(e){
 		new Vivus('web-development-svg', {type: 'oneByOne', duration: 300, file: 'images/web.svg'});
 		new Vivus('wordpress-svg', {type: 'oneByOne', duration: 300, file: 'images/wp.svg'});
 		new Vivus('branding-svg', {type: 'oneByOne', duration: 300, file: 'images/brand.svg'});
+
+$('.loader').fadeOut();
 
 });

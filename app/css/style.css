@@ -4034,6 +4034,12 @@ img.alignnone {
     bottom: 10px !important;
     left: 10px !important; } }
 
+#logo img {
+  transition: all 0.1s ease-in-out; }
+
+#logo a:active img {
+  transform: scale(0.9); }
+
 .slider-pro p.sp-layer {
   z-index: 10; }
   .slider-pro p.sp-layer.sp-txt-11 {

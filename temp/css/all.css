@@ -4436,6 +4436,31 @@ img.alignnone {
     bottom: 10px !important;
     left: 10px !important; } }
 
+#logo img {
+  -webkit-transition:all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+#logo a:active img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9); }
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 92; }
+
+.count-particles {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 200;
+  color: #fff;
+  display: none; }
+
+.fps {
+  display: none; }
+
 .slider-pro p.sp-layer {
   z-index: 10; }
   .slider-pro p.sp-layer.sp-txt-11 {

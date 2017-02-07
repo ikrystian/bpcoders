@@ -9,11 +9,34 @@
 		<link rel="shortcut icon" href="images/icons/favicon.ico" async>
 		<link rel="stylesheet" href="css/font-awesome.css" async>
 		<link rel="stylesheet " href="css/themify-icons.css" async>
+		<style>
+			.loader{
+				background-color: #afafaf;
+				position: fixed;
+				height: 100%;
+				width: 100%;
+				z-index: 9000;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column; 
+			}
+			.loader p{
+				padding-top: 10px;
+				color: #fff;
+			}
+		</style>
 		<link rel="stylesheet" href="css/all.css">
 
 	</head>
 	<body id="bpc-top">
+	<div class="loader">
+		<img src="http://samherbert.net/svg-loaders/svg-loaders/ball-triangle.svg" alt="">
+		<p>Loading ...</p>
+	</div>
 		<div class="main-container">
+		 	<div id="particles-js"></div> 
+			<div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
 			<header class="bpc-page-header bpc-page-header-02">
 				<div class="row">
 					<div class="col-md-5 col-sm-4 col-xs-4 header-left">
@@ -68,7 +91,7 @@
 					</div>
 					<!-- col-md-5 -->
 					<div class="col-md-2 col-sm-4 col-xs-4 header-center">
-						<div class="bpc-logo">
+						<div class="bpc-logo" id="logo">
 							<a href="#">
 								<img src="images/logo.png" alt="">
 							</a>
@@ -108,7 +131,7 @@
 							<div class="slider-pro slider-pro-03">
 								<div class="sp-slides">
 									<div class="sp-slide">
-										<img class="sp-image sp-image-bg" src="images/15/1.jpg" data-src="images/15/1.jpg" alt="">
+										<img id="hd-logo" class="sp-image sp-image-bg" src="images/15/1.jpg" data-src="images/15/1.jpg" alt="">
 										<p class="sp-layer sp-txt-31" data-horizontal="905" data-vertical="603" data-show-transition="left" data-hide-transition="right" data-show-delay="1000" data-hide-delay="200" data-show-duration="1000" data-hide-duration="1000">we are <strong>BPCoders</strong> <span>&amp;</span></p>
 										<p class="sp-layer sp-txt-32" data-horizontal="558" data-vertical="677" data-show-transition="up" data-hide-transition="left" data-show-delay="1500" data-hide-delay="200" data-show-duration="1000" data-hide-duration="1000">We believe great design</p>
 										<p class="sp-layer sp-txt-33" data-horizontal="667" data-vertical="757" data-show-transition="left" data-hide-transition="right" data-show-delay="2000" data-hide-delay="200" data-show-duration="1000" data-hide-duration="1000">can make a good idea even better<span>.</span></p>
@@ -528,7 +551,7 @@
 								<!-- item -->
 								<div class="item">
 									<div class="item-text">
-										This company have best employeers, they alvays pull theirs weight. It is characteristic of them to do everything quickly and on time. My website looks better than I expected. Everything work perfectly. The employeers are imaginative, conscientious, responsible, reliable and well-organised. this firm come up to my expectations. I know, that I can always rely on this company. Without doubt I will recommend.
+										This company have best employers, they always pull theirs weight. It is characteristic of them to do everything quickly and on time. My website looks better than I expected. Everything work perfectly. The employers are imaginative, conscientious, responsible, reliable and well-organised. This firm come up to my expectations. I know, that I can always rely on this company. Without doubt I will recommend.
 									</div>
 									<div class="item-rating">
 										<p>

@@ -4035,10 +4035,18 @@ img.alignnone {
     left: 10px !important; } }
 
 #logo img {
-  transition: all 0.1s ease-in-out; }
+  transition: all 0.1s ease-in-out;
+  max-height: 100px;
+  margin-top: -20px; }
 
-#logo a:active img {
-  transform: scale(0.9); }
+#logo a:hover img {
+  transform: scale(0.95); }
+
+#logo p {
+  line-height: 1;
+  margin-top: 5px; }
+  #logo p span {
+    border-bottom: 1px solid #f1494c; }
 
 #particles-js {
   position: absolute;

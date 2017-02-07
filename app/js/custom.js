@@ -581,11 +581,12 @@ jQuery('.main-nav a').on('click', function(e){
     /*bonus*/
     var count = 0;
     var farmImage = 'images/15/2.jpg';
-    $('#logo').on('click', function(e){
+    $('#particles-js').on('click', function(e){
         e.preventDefault();
         count ++;
         if(count == 10){
-            console.log('siup');
+            console.log('huehuehue');
+            $('.count-particles, .fps').show();
             $('.sp-image-bg')
                 .attr('src', farmImage)
                 .attr('data-src', farmImage);

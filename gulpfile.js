@@ -97,6 +97,9 @@ gulp.task('js', function() {
         "./app/js/flexslider/jquery.flexslider-min.js",
         "./app/js/jquery.isotope.min.js",
         "./app/js/portfolio.js",
+        "./app/js/particles.min.js",
+        "./app/js/stats.min.js",
+        "./app/js/particles.js",
         "./app/js/custom.js",
         "./app/js/vivus.min.js"
     ])

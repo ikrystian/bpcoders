@@ -585,7 +585,6 @@ jQuery('.main-nav a').on('click', function(e){
         e.preventDefault();
         count ++;
         if(count == 10){
-            console.log('huehuehue');
             $('.count-particles, .fps').show();
             $('.sp-image-bg')
                 .attr('src', farmImage)
@@ -604,6 +603,10 @@ jQuery('.main-nav a').on('click', function(e){
 		new Vivus('wordpress-svg', {type: 'oneByOne', duration: 300, file: 'images/wp.svg'});
 		new Vivus('branding-svg', {type: 'oneByOne', duration: 300, file: 'images/brand.svg'});
 
-$('.loader').fadeOut();
+$('.loader').fadeOut('1500', function(){
+    $(this).remove();
+});
+
+    console.log('Just click 10 times in header image :)');
 
 });

@@ -1797,7 +1797,7 @@ html{overflow-x:hidden}body{font-family:"Roboto",sans-serif;font-weight:400;colo
 .post_comment_form .comment-form-sub-title{text-align:center;font-size:15px;line-height:18px;font-family:"Montserrat",sans-serif;margin-bottom:55px}
 #portfolio{text-align:center;-webkit-transition:all .7s ease 0s;transition:all .7s ease 0s}
 #portfolio .portfolio-list{width:100%}#portfolio .portfolio-wrapper{position:relative;display:none}
-#portfolio .portfolio-background{position:relative;z-index:999;margin-bottom:30px}
+#portfolio .portfolio-background{position:relative;z-index:999;margin-bottom:20px}
 #portfolio .portfolio-loading{background:url("../images/portfolio-loader.gif") no-repeat center center;height:60px;width:60px;position:fixed;top:50%;left:50%;margin-top:-30px;margin-left:-30px;display:none;z-index:10000;border-radius:30px}
 #portfolio #portfolio-close,#portfolio #portfolio-prev,#portfolio #portfolio-next{position:absolute;top:42px;right:35px;width:16px;height:20px;outline:0}
 #portfolio #portfolio-prev{right:75px}#portfolio #portfolio-next{right:0}#portfolio #portfolio-close i,#portfolio #portfolio-prev i,#portfolio #portfolio-next i{font-size:16px}

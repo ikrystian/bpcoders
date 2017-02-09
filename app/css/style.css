@@ -5855,7 +5855,8 @@ img.alignnone {
     display: none; }
   #portfolio .portfolio-background {
     position: relative;
-    z-index: 999; }
+    z-index: 999;
+    margin-bottom: 30px; }
   #portfolio .portfolio-loading {
     background: url("../images/portfolio-loader.gif") no-repeat center center;
     height: 60px;

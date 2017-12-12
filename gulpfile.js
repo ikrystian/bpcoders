@@ -8,7 +8,8 @@ var pump = require('pump');
 var uglifycss = require('gulp-uglifycss');
 var clean = require('gulp-clean');
 var runSequence = require('run-sequence').use(gulp);
-var postcss      = require('gulp-postcss');
+var postcss = require('gulp-postcss');
+var uncss = require('postcss-uncss');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
 var htmlmin = require('gulp-htmlmin');
@@ -119,6 +120,7 @@ gulp.task('compress-js', function () {
 
 gulp.task('compress-css', function () {
   gulp.src('./temp/**/*.css')
+    .pipe(postcss())
     .pipe(uglifycss({
       "maxLineLen": 80,
       "uglyComments": true

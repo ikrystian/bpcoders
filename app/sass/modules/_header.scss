@@ -106,11 +106,10 @@
 		display: none;
 	}
 	.bpc-hamburger-menu{
-		position: relative!important;
+		position: fixed !important;
 		@extend %transition;
 		.hamburger-menu-btn{
 			font-size: 16px;
-			color: $color-primary;
 			margin-top: 15px;
 			color: $cl-015;
 			text-transform: uppercase;
@@ -470,11 +469,11 @@
 
 .mobile-nav{
 	text-align: left;
-	margin-top: 35px;
+	margin-top: 5px;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	border-top: 1px solid rgba($cl-001, 0.3);
-	border-bottom: 1px solid rgba($cl-001, 0.3);
+	border-top: 1px solid rgba(#000, 0.3);
+	border-bottom: 1px solid rgba(#000, 0.3);
 	.mobile-menu{
 		padding:  0;
 		> li{
@@ -492,7 +491,7 @@
 
 		position: relative;
 		display: block;   
-		color: #fff; 
+		color: #000;
 		font-size: 13px;
 		font-family: $font-primary;
 		span{
@@ -629,12 +628,14 @@
 .mobile-navi-wrapper{	
 	width: 320px;
 	height: 100%;
-	padding: 50px 40px;
+	padding: 5px 40px;
 	overflow:scroll;
+	background-color: #e2e2e2;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
 	&::-webkit-scrollbar { 
 		display: none; 
 	}
-	@extend %main_bg_color;
 
 	.bpc-close-btn{
 		position: absolute;

@@ -69,7 +69,7 @@ gulp.task('move', function(){
 
       gulp.src([
         './app/css/font-awesome.css',
-        './app/css/themify-icons.css',
+        './app/css/themify-icons.css'
         ])
       .pipe(gulp.dest('./build/css/'));
 
@@ -120,7 +120,6 @@ gulp.task('compress-js', function () {
 
 gulp.task('compress-css', function () {
   gulp.src('./temp/**/*.css')
-    .pipe(postcss())
     .pipe(uglifycss({
       "maxLineLen": 80,
       "uglyComments": true

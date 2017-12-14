@@ -20,6 +20,11 @@ jQuery(document).ready(function() {
             jQuery(this).parent().attr('href', '#');
         });
     }
+    jQuery('.mobile-menu a').on('click', function() {
+        jQuery('.mobile-navi-wrapper').removeClass('active');
+    });
+
+
 jQuery('.main-nav a').on('click', function(e){
     e.preventDefault();
     var targt = $(this).attr('href');

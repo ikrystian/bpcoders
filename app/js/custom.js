@@ -612,6 +612,9 @@ $('.loader').fadeOut('1500', function(){
     $(this).remove();
 });
 
+    var sliderHeight = $('.bpc-area-slider').height();
+    $('#particles-js').height(sliderHeight);
+
     console.log('Just click 10 times in header image :)');
 
 });

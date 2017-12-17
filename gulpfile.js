@@ -13,7 +13,16 @@ var uncss = require('postcss-uncss');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
 var htmlmin = require('gulp-htmlmin');
+var postcss = require('gulp-postcss');
+var uncss = require('postcss-uncss');
+var imagemin = require('gulp-imagemin');
 
+
+var plugins = [
+  uncss({
+      html: ['./app/index.html']
+  }),
+];
 
 gulp.task('sass', function() {
     return gulp.src("./app/sass/**/*.scss")
@@ -65,6 +74,7 @@ gulp.task('autoprefixer', function () {
 
 gulp.task('move', function(){
     gulp.src('./app/images/**/*.*')
+      .pipe(imagemin())
       .pipe(gulp.dest('./build/images'));
 
       gulp.src([
@@ -120,6 +130,7 @@ gulp.task('compress-js', function () {
 
 gulp.task('compress-css', function () {
   gulp.src('./temp/**/*.css')
+    .pipe(postcss(plugins))
     .pipe(uglifycss({
       "maxLineLen": 80,
       "uglyComments": true

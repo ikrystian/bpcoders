@@ -3954,6 +3954,9 @@ img.alignnone {
   .bpc-slide-btn--right + div.active {
     right: 0; }
 
+.mail a {
+  text-transform: none !important; }
+
 .mobile-navi-wrapper {
   width: 320px;
   height: 100%;
@@ -3965,12 +3968,12 @@ img.alignnone {
     display: none; }
   .mobile-navi-wrapper .bpc-close-btn {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     z-index: 999999;
     cursor: pointer;
     color: #999999;
-    font-size: 15px;
+    font-size: 30px;
     display: inline-block;
     text-align: center; }
   .mobile-navi-wrapper .mobile-logo {

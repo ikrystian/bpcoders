@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<link rel="shortcut icon" href="images/fav.png" async>
-		<link rel="stylesheet" href="css/font-awesome.css" async>
-		<link rel="stylesheet " href="css/themify-icons.css" async>
+		<link rel="shortcut icon" href="images/fav.png">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet " href="css/themify-icons.css">
 		<style>.loader{background-color: #afafaf; position: fixed; height: 100%; width: 100%; z-index: 9000; display: flex; align-items: center; justify-content: center; flex-direction: column; } .loader p{ padding-top: 10px; color: #fff; }</style>
 		<!-- build:css -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -773,7 +773,6 @@
 													<div class="entry-content">
 														<header>
 															<p class="entry-sub-title style-01">Other tools like</p>
-															<h4 class="entry-title style-08">
 															<a target="_blank" href="https://webpack.github.io/">Webpack</a>,
 															<a target="_blank" href="https://www.sublimetext.com/">Sublime Text</a>,
 															<a target="_blank" href="https://jquery.com/">jQuery</a>,
@@ -820,7 +819,7 @@
 										<!-- col-md-4 -->
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<p class="form-group">
-												<input required="required" class="form-control" type="text" name="email" placeholder="Your Email" name="_replyto">
+												<input required="required" class="form-control" type="text" name="email" placeholder="Your Email">
 											</p>
 										</div>
 										<!-- col-md-4 -->
@@ -862,7 +861,7 @@
 					<footer class="bpc-page-footer">
 						<div class="row">
 							<div class="col-md-5 col-sm-5 col-xs-5">
-								<p>Made with <span class="fa fa-heart text-red"></span> by <span class="text-hover">BPCoders</span>. © 2017 All Right Reserved v.1.0</p>
+								<p>Made with <span class="fa fa-heart text-red"></span> by <span class="text-hover">BPCoders</span>. © 2017 All Right Reserved v.1.3</p>
 							</div>
 							<!-- col-md-5 -->
 							<div class="col-md-2 col-sm-2 col-xs-2">
@@ -886,7 +885,27 @@
 				<!-- container -->
 			</div>
 			<!-- bottom sidebar -->
+
+            <!--<div id="app">-->
+                <!--<input-->
+                        <!--v-model.trim="newTodoText"-->
+                        <!--@keyup.enter="addTodo"-->
+                        <!--placeholder="Add new todo"-->
+                <!--&gt;-->
+                <!--<ul>-->
+                    <!--<li v-for="todo in todos">-->
+                        <!--<input-->
+                                <!--:value="todo.text"-->
+                                <!--@input="updateTodoText(todo, $event.target.value)"-->
+                        <!--&gt;-->
+                        <!--<button @click="removeTodo(todo)">X</button>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
 		</div>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script src="https://gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+		<script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
 		<!-- build:js -->
 		<script src="js/jquery-2.2.4.min.js"></script>
 		<script src="js/superfish.min.js"></script>
@@ -908,7 +927,7 @@
 		<script src="js/stats.min.js"></script>
 		<script src="js/particles.js"></script>
 		<script src="js/custom.js"></script>
-
+		<script src="js/vue.js"></script>
 		<!-- endbuild -->
 	</body>
 </html>

@@ -589,7 +589,7 @@ jQuery('.main-nav a').on('click', function(e){
     $('#particles-js').on('click', function(e){
         e.preventDefault();
         count ++;
-        if(count === 10){
+        if(count === 1000){
             $('.count-particles, .fps').show();
             $('.sp-image-bg')
                 .attr('src', farmImage)
@@ -696,7 +696,7 @@ jQuery('.main-nav a').on('click', function(e){
                 },
                 "onclick": {
                     "enable": true,
-                    "mode": "repulse"
+                    "mode": "push"
                 },
                 "resize": true
             },

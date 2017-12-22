@@ -585,16 +585,18 @@ jQuery('.main-nav a').on('click', function(e){
 
     /*bonus*/
     var count = 0;
-    var farmImage = 'images/15/2.jpg';
+    var farmImage = 'images/cat.jpg';
     $('#particles-js').on('click', function(e){
         e.preventDefault();
         count ++;
-        if(count === 1000){
+        if(count === 10){
             $('.count-particles, .fps').show();
             $('.sp-image-bg')
                 .attr('src', farmImage)
                 .attr('data-src', farmImage);
+                $('#ferrette').addClass('show');
         }
+
     });
 
 
@@ -728,6 +730,15 @@ jQuery('.main-nav a').on('click', function(e){
         },
         "retina_detect": true
     });
+
+
+    jQuery('#ferrette').on('click', function(){
+        jQuery(this).toggleClass('touched');
+    })
+    $('#ferrette').on({ 'touchstart' : function(e){ 
+        e.preventDefault();
+        jQuery(this).toggleClass('touched');
+     } });
 
 
 

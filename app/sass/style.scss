@@ -6,3 +6,33 @@
  @import "modules/bottomSidebar-footer";
  @import "responsive";
 
+ #ferrette {
+    position: fixed;
+    bottom: -500px;
+    transition: all 1s ease-in-out;
+    z-index: 1000000000;
+
+    &.show {
+        bottom: -220px;
+    }
+
+    &:hover, &.touched {
+        bottom: -80px;
+        cursor: pointer;
+    }
+    &.clicked {
+      bottom: -220px;
+    }
+  }
+
+  canvas:hover {
+      cursor: pointer;
+  }
+
+  #form .ferret {
+    display: none;
+    height: 95px;
+    .show {
+      display: block;
+    }
+  }

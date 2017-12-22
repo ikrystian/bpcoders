@@ -5041,7 +5041,8 @@ img.alignnone {
   margin: auto; }
 
 .oos-icon {
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center; }
 
 .project-slider {
   margin-bottom: 30px; }
@@ -7177,5 +7178,8 @@ canvas:hover {
   height: 95px; }
   #form .ferret .show {
     display: block; }
+
+.js-header-img {
+  transition: transform 200ms ease-in-out; }
 
 /*# sourceMappingURL=all.css.map */

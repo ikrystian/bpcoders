@@ -1417,14 +1417,31 @@ jQuery('.main-nav a').on('click', function(e){
 
     jQuery('#ferrette').on('click', function(){
         jQuery(this).toggleClass('touched');
-    })
+    });
+
     $('#ferrette').on({ 'touchstart' : function(e){ 
         e.preventDefault();
         jQuery(this).toggleClass('touched');
      } });
+    Number.prototype.round = function(places) {
+        return +(Math.round(this + "e+" + places)  + "e-" + places);
+    }
+
+    var headerImage = $('.js-header-img');
+    var headerImageHeight =  headerImage.height();
+    console.log(headerImageHeight);
+    $(window).scroll(function() {
+        var top = $(window).scrollTop();
+        if(top < headerImageHeight) {
+            var margin =((top/headerImageHeight) * 40).round(0) + 1;
+            if(margin < 10) margin = '0' + margin;
+            var scale = '1.' + margin;
 
 
+            headerImage.css('transform', 'scale('+ scale +')');
+        }
 
+    });
 
 });
 

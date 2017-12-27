@@ -1,6 +1,6 @@
 <?php
 require_once ('MysqliDb.php');
-$db = new MysqliDb ('sql.bpcoders.nazwa.pl', 'bpcoders_bpc', 'KUdziak1991', 'bpcoders_21');
+$db = new MysqliDb('sql.bpcoders.nazwa.pl', 'bpcoders_bpc', 'KUdziak1991!', 'bpcoders_21');
 $id = $_GET['id'];
 
 $db->where ("id", $id);

@@ -1,7 +1,7 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 require_once('MysqliDb.php');
-$db = new MysqliDb('localhost', 'bpcoders_bpc', 'KUdziak1991!', 'bpcoders_21');
+$db = new MysqliDb('localhost', 'user', 'password', 'database');
 $id = $_GET['id'];
 
 $db->where('id', $id);

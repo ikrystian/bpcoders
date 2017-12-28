@@ -4,13 +4,19 @@ $(document).ready(function(){
 		portfolioitem($(".portfolio-box"));
 		portfolioNav();
 	}
-
+    var portfolioBox = $('#portfolio-details-box');
 	function portfolioitem(e){
-		var portfolioBox = $('#portfolio-details-box');
+
 		$('.portfolio-details', e).on( "click", function() {
-
 			var portfolioItemUrl = $(this).attr("href")+"?"+(new Date()).getTime();
-
+			$('#portfolio-prev, #portfolio-next').show();
+			var projectId = $(this).attr("href").substr(38, 40);
+			if(projectId == 1) {
+            	$('#portfolio-next').hide();
+			}
+            if(projectId == 8) {
+                $('#portfolio-prev').hide();
+            }
 			$('html, body').animate({
 				scrollTop: $(".portfolio-top").offset().top - 50
 			}, 400);
@@ -48,6 +54,15 @@ $(document).ready(function(){
 
 	function portfolioNav() {
 		$('#portfolio-next').on( "click", function() {
+            $('#portfolio-prev, #portfolio-next').show();
+            var projectId = $(".projectNextUrl").attr("href").substr(38, 40);
+            console.log(projectId);
+            if(projectId == 1) {
+                $('#portfolio-next').hide();
+            }
+            if(projectId == 8) {
+                $('#portfolio-prev').hide();
+            }
 			var portfolioItemNextUrl = $(".projectNextUrl").attr("href")+"?"+(new Date()).getTime();
 			portfolioBox.animate({opacity:0}, 400,function(){
 			  $("#portfolio-details-box").load(portfolioItemNextUrl,function(){
@@ -59,6 +74,15 @@ $(document).ready(function(){
 		});
 
 		$('#portfolio-prev').on( "click", function() {
+            $('#portfolio-prev, #portfolio-next').show();
+            var projectId = $(".projectPrevUrl").attr("href").substr(38, 40);
+            console.log(projectId);
+            if(projectId == 1) {
+                $('#portfolio-next').hide();
+            }
+            if(projectId == 8) {
+                $('#portfolio-prev').hide();
+            }
 			var portfolioItemPrevUrl = $(".projectPrevUrl").attr("href")+"?"+(new Date()).getTime();
 			portfolioBox.animate({opacity:0}, 400,function(){
 			  $("#portfolio-details-box").load(portfolioItemPrevUrl,function(){

@@ -42,10 +42,10 @@
 }
 
 .project-slider{
-  margin-bottom: 30px;
+  position: relative;
   width: 100%;
   @media (min-width: 800px) {
-    width: 70%;
+    width: 65%;
   }
 }
 

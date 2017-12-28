@@ -1,5 +1,6 @@
 .row-slider {
 	display: flex;
+	border: 1px solid #dedede;
 }
 
 #portfolio {
@@ -47,6 +48,7 @@
 	#portfolio-next {
 		right: 0px;
 	}
+
 	#portfolio-close i,
 	#portfolio-prev i,
 	#portfolio-next i {
@@ -85,9 +87,12 @@
 			list-style: none;
 		}
 	}
+
 	.project-info-box {
 		flex: 1 1 auto;
-		padding-left: 25px;
+		border-left: 1px solid #dedede;
+		padding-left: 20px;
+		padding-right: 20px;
 		text-align: left;
 	}
 	.portfolio-navigation {
@@ -165,5 +170,32 @@
 			font-size: 15px;
 			margin-top: 10px;
 		}
+	}
+}
+
+.flex-direction-nav {
+	z-index: 500;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+	a {
+		background-color: #f1494c;
+		display: inline-block;
+		width: 80px;
+		position: absolute;
+		left: 0;
+		color: #fff;
+		top: calc(50% - 25px);
+		height: 50px;
+		line-height: 50px;
+		border: 2px solid #f1494c;
+		&:hover {
+			background-color: #fff;
+		}
+	}
+	.flex-next {
+		left: auto;
+		right: 0;
 	}
 }

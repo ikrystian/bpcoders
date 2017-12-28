@@ -6,6 +6,7 @@ $(document).ready(function(){
 	}
 
 	function portfolioitem(e){
+		var portfolioBox = $('#portfolio-details-box');
 		$('.portfolio-details', e).on( "click", function() {
 
 			var portfolioItemUrl = $(this).attr("href")+"?"+(new Date()).getTime();
@@ -23,13 +24,13 @@ $(document).ready(function(){
 				"opacity": "0.6"
 			}, 300);
 
-			$('#portfolio-details-box').animate({opacity:0}, 400,function(){
+            portfolioBox.animate({opacity:0}, 400,function(){
 
-			  $("#portfolio-details-box").load(portfolioItemUrl,function(){
+                portfolioBox.load(portfolioItemUrl,function(){
 					$('.flexslider').flexslider({animation: "fade",controlNav:false});
 			  });
 
-			  $('#portfolio-details-box').animate({opacity:1},400);
+                portfolioBox.animate({opacity:1},400);
 			});
 
 
@@ -37,8 +38,8 @@ $(document).ready(function(){
 			  $('.portfolio-loading').delay(200).animate({ "opacity": "0" }, 100,function(){
 				$('.portfolio-loading').css("display","none");
 			  });
-			  $('#portfolio-details-box').css('visibility', 'visible');}).delay(800).slideDown(400,function(){
-				$('#portfolio-details-box').animate({opacity:1}, 400);
+			  portfolioBox.css('visibility', 'visible');}).delay(800).slideDown(400,function(){
+				portfolioBox.animate({opacity:1}, 400);
 			  });
 			return false;
 		});
@@ -48,29 +49,29 @@ $(document).ready(function(){
 	function portfolioNav() {
 		$('#portfolio-next').on( "click", function() {
 			var portfolioItemNextUrl = $(".projectNextUrl").attr("href")+"?"+(new Date()).getTime();
-			$('#portfolio-details-box').animate({opacity:0}, 400,function(){
+			portfolioBox.animate({opacity:0}, 400,function(){
 			  $("#portfolio-details-box").load(portfolioItemNextUrl,function(){
 				$('.flexslider').flexslider({animation: "fade",controlNav:false});
 			  });
-			  $('#portfolio-details-box').animate({opacity:1},400);
+			  portfolioBox.animate({opacity:1},400);
 			});
 		  return false;
 		});
 
 		$('#portfolio-prev').on( "click", function() {
 			var portfolioItemPrevUrl = $(".projectPrevUrl").attr("href")+"?"+(new Date()).getTime();
-			$('#portfolio-details-box').animate({opacity:0}, 400,function(){
+			portfolioBox.animate({opacity:0}, 400,function(){
 			  $("#portfolio-details-box").load(portfolioItemPrevUrl,function(){
 				$('.flexslider').flexslider({animation: "fade",controlNav:false});
 			  });
-			  $('#portfolio-details-box').animate({opacity:1},400);
+			  portfolioBox.animate({opacity:1},400);
 			});
 			return false;
 		});
 
 		$('#portfolio-close').on( "click", function() {
 		  $('.portfolio-wrapper').slideUp(400, function(){
-			  $('#portfolio-details-box').empty();
+			  portfolioBox.empty();
 		  });
 		  return false;
 		});

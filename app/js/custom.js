@@ -53,63 +53,6 @@ jQuery('.main-nav a:not(".no-action")').on('click', function(e){
         });
     }
 
-    var owl_2 = jQuery('.owl-carousel-02');
-    if(owl_2.length){
-        owl_2.owlCarousel({
-            items: 1,
-            loop: true,
-            nav: true,
-            navText: ["<span class='fa fa-angle-left'></span>","<span class='fa fa-angle-right'></span>"],
-            dots: false,
-            autoplay: false,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            slideSpeed: 4000,
-        });
-    }
-
-    var owl_3 = jQuery('.owl-carousel-03');
-    if(owl_3.length){
-        owl_3.owlCarousel({
-            items: 1,
-            loop: true,
-            nav: false,
-            dots: true,
-            autoplay: false,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            slideSpeed: 10000,
-        });
-    }
-
-    var owl_4 = jQuery('.owl-carousel-04');
-    if(owl_4.length){
-        owl_4.owlCarousel({
-            items: 1,
-            loop: true,
-            nav: true,
-            navText: ["<span class='fa fa-angle-left'></span>","<span class='fa fa-angle-right'></span>"],
-            dots: false,
-            autoplay: false,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            slideSpeed: 10000,
-        });
-    }
-    var owl_5 = jQuery('.owl-carousel-05');
-    if(owl_5.length){
-        owl_5.owlCarousel({
-            items: 1,
-            loop: true,
-            nav: true,
-            navText: ["<span class='fa fa-angle-left'></span>","<span class='fa fa-angle-right'></span>"],
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            slideSpeed: 10000,
-        });
-    }
     /*_____________ slick  _____________*/
     if (jQuery('.slick-01.slick-content').length) {
         jQuery('.slick-01.slick-content').slick({
@@ -132,16 +75,6 @@ jQuery('.main-nav a:not(".no-action")').on('click', function(e){
             arrows: false,
             centerPadding: '0',
 
-        });
-    }
-
-    if (jQuery('.slick-02').length) {
-        jQuery('.slick-02').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            prevArrow: "<span class='bpc-prev fa fa-angle-left'></span>",
-            nextArrow: "<span class='bpc-next fa fa-angle-right'></span>",
         });
     }
 

@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
     });
 
 
-jQuery('.main-nav a').on('click', function(e){
+jQuery('.main-nav a:not(".no-action")').on('click', function(e){
     e.preventDefault();
     var targt = $(this).attr('href');
     console.log(targt);

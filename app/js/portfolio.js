@@ -33,8 +33,8 @@ $(document).ready(function(){
 			});
 
 
-			$('.portfolio-wrapper').slideUp(400, function(){
-			  $('.portfolio-loading').delay(800).animate({ "opacity": "0" }, 100,function(){
+			$('.portfolio-wrapper').slideUp(200, function(){
+			  $('.portfolio-loading').delay(200).animate({ "opacity": "0" }, 100,function(){
 				$('.portfolio-loading').css("display","none");
 			  });
 			  $('#portfolio-details-box').css('visibility', 'visible');}).delay(800).slideDown(400,function(){

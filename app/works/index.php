@@ -1,23 +1,23 @@
 <?php
-require_once ('MysqliDb.php');
-$db = new MysqliDb('sql.bpcoders.nazwa.pl', 'bpcoders_bpc', 'KUdziak1991!', 'bpcoders_21');
+header('Access-Control-Allow-Origin: *');
+require_once('MysqliDb.php');
+$db = new MysqliDb('localhost', 'bpcoders_bpc', 'KUdziak1991!', 'bpcoders_21');
 $id = $_GET['id'];
 
-$db->where ("id", $id);
-$work = $db->getOne ("works");
-print_r($work);
+$db->where('id', $id);
+$work = $db->getOne('works');
 ?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>karta turawa park</title>
+<title><?= $work['name']; ?></title>
 </head>
 
 <body>
 <div id="wrapper" class="project-margin-reset">
 	<div class="container pos-center projects">
-		<h2 class="margint60">Loyality Program in Turawa Park</h2>
+		<h2 class="margint60"><?= $work['name']; ?></h2>
 		<p class="margint5">Design, Web development</p>
 		<div class="container">
 			<div class="row">
@@ -25,19 +25,19 @@ print_r($work);
 					<div class="project-slider">
 						<div class="flexslider">
 							<ul class="slides">
-								<li><img alt="" class="img-responsive" src="works/images/turawa.jpg" /></li>
-								<li><img alt="" class="img-responsive" src="works/images/turawa-1.jpg" /></li>
-								<li><img alt="" class="img-responsive" src="works/images/turawa-2.jpg" /></li>
-								<li><img alt="" class="img-responsive" src="works/images/turawa-3.jpg" /></li>
+								<li><img alt="" class="img-responsive" src="works/images/<?= $work['name']; ?>.jpg" /></li>
+								<li><img alt="" class="img-responsive" src="works/images/<?= $work['name']; ?>1.jpg" /></li>
+								<li><img alt="" class="img-responsive" src="works/images/<?= $work['name']; ?>-2.jpg" /></li>
+								<li><img alt="" class="img-responsive" src="works/images/<?= $work['name']; ?>-3.jpg" /></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-4 pos-left project-info-box">
-					<div>
-						<h4>ABOUT PROJECT</h4>
-						<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo pariatur totam quaerat cupiditate optio iusto doloremque. Ratione officiis provident dolor libero nihil quibusdam itaque! Quo provident.</p>
-					</div>
+<!--					<div>-->
+<!--						<h4>ABOUT PROJECT</h4>-->
+<!--						<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo pariatur totam quaerat cupiditate optio iusto doloremque. Ratione officiis provident dolor libero nihil quibusdam itaque! Quo provident.</p>-->
+<!--					</div>-->
 					<div class="project-details">
 						<h4>PROJECT DETAILS</h4>
 						<ul class="project-det ">
@@ -47,7 +47,7 @@ print_r($work);
 							</li>
 							<li class="clearfix">
 								<div class="pull-left list-title">CLIENT</div>
-								<div class="pull-right list-desc">Themetide</div>
+								<div class="pull-right list-desc"><?= $work['client']; ?></div>
 							</li>
 							<li class="clearfix">
 								<div class="pull-left list-title">DATE</div>
@@ -55,7 +55,7 @@ print_r($work);
 							</li>
 							<li class="clearfix">
 								<div class="pull-left list-title">PROJECT WEBSITE</div>
-								<div class="pull-right list-desc"><a href="http://karta.turawa-park.com">karta.turawa-park.com</a></div>
+								<div class="pull-right list-desc"><a href="http://<?= $work['url']; ?>"><?= $work['url']; ?></a></div>
 							</li>
 						</ul>
 					</div>

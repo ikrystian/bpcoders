@@ -992,7 +992,8 @@ img.alignnone {
     .widget-header.meta-header .header-navigation .bpc-tab-navs .bpc-tab-nav.active:hover a {
       color: #333333 !important; }
   .widget-header.meta-header .header-navigation .masonry-filter {
-    margin-top: 46px; }
+    margin-top: 46px;
+    display: none; }
     .widget-header.meta-header .header-navigation .masonry-filter a {
       display: inline-block;
       font-size: 15px;

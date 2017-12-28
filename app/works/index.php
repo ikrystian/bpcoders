@@ -7,14 +7,6 @@ $id = $_GET['id'];
 
 $db->where('id', $id);
 $work = $db->getOne('works');
-
-$current = '';
-if($id == 1) {
-    $current = 'first';
-}
-if($id == 8) {
-    $current = 'first';
-}
 ?>
 <!doctype html>
 <html>
@@ -25,7 +17,7 @@ if($id == 8) {
 
 <body>
 <div id="wrapper" class="project-margin-reset">
-    <div class="container pos-center projects">
+    <div class="container pos-center projects" id="project-<?= $id; ?>">
         <h2 class="margint60"><?= $work['name']; ?></h2>
         <p class="margint5">Design, Web development</p>
         <div class="container">
@@ -71,7 +63,7 @@ if($id == 8) {
         </div>
     </div>
     <div class="projects-navigation-links">
-        <a class="projectPrevUrl" <?php echo 'id="'. $current .'"'; ?> href="http://bpcoders.pl/works/index.php?id=<?= $id+1; ?>"></a>
+        <a class="projectPrevUrl" href="http://bpcoders.pl/works/index.php?id=<?= $id+1; ?>"></a>
         <a class="projectNextUrl" href="http://bpcoders.pl/works/index.php?id=<?= $id-1; ?>"></a>
     </div>
 </div>

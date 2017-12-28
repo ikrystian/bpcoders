@@ -43,6 +43,10 @@
 
 .project-slider{
   margin-bottom: 30px;
+  width: 100%;
+  @media (min-width: 800px) {
+    width: 70%;
+  }
 }
 
 .overlap-top{
@@ -1407,7 +1411,7 @@ span{
   .widget-header.style-01{
     background: $cl-006;
     padding: 96px 0 66px 0;
-    margin-bottom: 0;
+    margin-bottom: -20px;
   }
 }
 

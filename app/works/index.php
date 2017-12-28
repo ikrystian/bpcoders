@@ -21,20 +21,18 @@ $work = $db->getOne('works');
 		<h2 class="margint60"><?= $work['name']; ?></h2>
 		<p class="margint5">Design, Web development</p>
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-sm-8">
+			<div class="row-slider">
 					<div class="project-slider">
 						<div class="flexslider">
 							<ul class="slides">
 								<li><img alt="" class="img-responsive" src="works/images/<?= $work['name']; ?>.jpg" /></li>
-								<li><img alt="" class="img-responsive" src="works/images/<?= $work['name']; ?>1.jpg" /></li>
+								<li><img alt="" class="img-responsive" src="works/images/<?= $work['name']; ?>-1.jpg" /></li>
 								<li><img alt="" class="img-responsive" src="works/images/<?= $work['name']; ?>-2.jpg" /></li>
 								<li><img alt="" class="img-responsive" src="works/images/<?= $work['name']; ?>-3.jpg" /></li>
 							</ul>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-sm-4 pos-left project-info-box">
+				<div class="project-info-box">
 <!--					<div>-->
 <!--						<h4>ABOUT PROJECT</h4>-->
 <!--						<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo pariatur totam quaerat cupiditate optio iusto doloremque. Ratione officiis provident dolor libero nihil quibusdam itaque! Quo provident.</p>-->

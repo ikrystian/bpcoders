@@ -166,6 +166,11 @@ blockquote{
     color: $color-secondary;
 }
 
+.main-container {
+    position: relative;
+    height: 100vh;
+}
+
 html {
     overflow-x: hidden;
 }
@@ -176,16 +181,7 @@ body {
     font-weight: 400;
     color: $color-secondary;
     background: $cl-001;
-    overflow: hidden;
-
-    text-rendering: optimizeLegibility!important;
-    text-rendering: geometricPrecision!important;
-    font-smooth: always!important;
-    font-smoothing: antialiased!important;
-    -moz-font-smoothing: antialiased!important;
-    -webkit-font-smoothing: antialiased!important;
-    -webkit-font-smoothing: subpixel-antialiased!important;
-    -moz-osx-font-smoothing: grayscale!important;
+    max-width: 100%;
 }
 
 /*___________ 1.2.2 Basic Structure Class ___________*/

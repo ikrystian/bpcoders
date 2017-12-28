@@ -1,7 +1,11 @@
+.row-slider {
+	display: flex;
+}
 
 #portfolio {
 	text-align: center;
 	transition: all 0.7s ease 0s;
+
 	.portfolio-list {
 		width: 100%;
 	}
@@ -51,7 +55,7 @@
 	.projects {
 		font-size: 12px;
 		line-height: 21px;
-		padding-top: 30px;
+		padding-top: 50px;
 	}
 	.project-details {
 		margin-top: 30px;
@@ -74,7 +78,7 @@
 	}
 	ul.project-det {
 		padding: 0;
-		margin: 0
+		margin: 0;
 		li{
 			border-bottom: 1px solid #f5f5f5;
 			line-height: 35px;
@@ -82,12 +86,13 @@
 		}
 	}
 	.project-info-box {
-		padding-left: 20px;
+		flex: 1 1 auto;
+		padding-left: 25px;
 		text-align: left;
 	}
 	.portfolio-navigation {
 		position: absolute;
-		top: -30px;
+		top: -20px;
 		left: 50%;
 		margin-left: 40px;
 	}

@@ -303,6 +303,10 @@ blockquote {
 :-ms-input-placeholder {
   color: #4c4c4c; }
 
+.main-container {
+  position: relative;
+  height: 100vh; }
+
 html {
   overflow-x: hidden; }
 
@@ -311,15 +315,7 @@ body {
   font-weight: 400;
   color: #4c4c4c;
   background: #fff;
-  overflow: hidden;
-  text-rendering: optimizeLegibility !important;
-  text-rendering: geometricPrecision !important;
-  font-smooth: always !important;
-  font-smoothing: antialiased !important;
-  -moz-font-smoothing: antialiased !important;
-  -webkit-font-smoothing: antialiased !important;
-  -webkit-font-smoothing: subpixel-antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important; }
+  max-width: 100%; }
 
 /*___________ 1.2.2 Basic Structure Class ___________*/
 .full-width {
@@ -4563,7 +4559,11 @@ img.alignnone {
   text-align: center; }
 
 .project-slider {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 100%; }
+  @media (min-width: 800px) {
+    .project-slider {
+      width: 70%; } }
 
 .overlap-top {
   padding-top: 0px;
@@ -5556,7 +5556,7 @@ img.alignnone {
 .bpc-widget-filter-02 .widget-header.style-01 {
   background: #f8f8f8;
   padding: 96px 0 66px 0;
-  margin-bottom: 0; }
+  margin-bottom: -20px; }
 
 .module-filter-02--02 .last40-loadmore, .module-filter-02--03 .last40-loadmore, .module-filter-02--04 .last40-loadmore, .module-filter-02--05 .last40-loadmore {
   margin: auto;
@@ -5831,6 +5831,9 @@ img.alignnone {
     font-family: "Montserrat", sans-serif;
     margin-bottom: 55px; }
 
+.row-slider {
+  display: flex; }
+
 #portfolio {
   text-align: center;
   transition: all 0.7s ease 0s; }
@@ -5875,7 +5878,7 @@ img.alignnone {
   #portfolio .projects {
     font-size: 12px;
     line-height: 21px;
-    padding-top: 30px; }
+    padding-top: 50px; }
   #portfolio .project-details {
     margin-top: 30px;
     margin-bottom: 30px; }
@@ -5891,16 +5894,18 @@ img.alignnone {
     font-weight: 600; }
   #portfolio ul.project-det {
     padding: 0;
-    margin: 0 li;
-      margin-border-bottom: 1px solid #f5f5f5;
-      margin-line-height: 35px;
-      margin-list-style: none; }
+    margin: 0; }
+    #portfolio ul.project-det li {
+      border-bottom: 1px solid #f5f5f5;
+      line-height: 35px;
+      list-style: none; }
   #portfolio .project-info-box {
-    padding-left: 20px;
+    flex: 1 1 auto;
+    padding-left: 25px;
     text-align: left; }
   #portfolio .portfolio-navigation {
     position: absolute;
-    top: -30px;
+    top: -20px;
     left: 50%;
     margin-left: 40px; }
   #portfolio .project-margin-reset {

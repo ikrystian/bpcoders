@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>BPCoders - we know ways to make the internet better.</title>
+		<title lang="en" data-lang-token="title">BPCoders - we know ways to make the internet better.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -21,20 +21,26 @@
 		<link rel="stylesheet" href="css/perfect-scrollbar.css">
 		<link rel="stylesheet" href="css/style.css">
 		<!-- endbuild -->
-		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36273806-1"></script>
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/jquery-lang.js"></script>
 		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+            var lang = new Lang();
+            lang.dynamic('pl', '/langpack/pl.json');
+            lang.init({
+                defaultLang: 'en'
+            });
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-		gtag('config', 'UA-36273806-1');
+            gtag('config', 'UA-36273806-1');
 		</script>
 	</head>
 	<body id="bpc-top">
 	<div class="loader">
 		<img src="http://samherbert.net/svg-loaders/svg-loaders/ball-triangle.svg" alt="">
-		<p>Loading ...</p>
+		<p lang="en" data-lang-token="loading">Loading ...</p>
 	</div>
 		<div class="main-container">
 		 	<div id="particles-js"></div>
@@ -52,25 +58,25 @@
 								<nav class="mobile-nav">
 									<ul class="mobile-menu">
 										<li>
-											<a href="#bpc-top">home</a>
+											<a href="#bpc-top" lang="en" data-lang-token="home">home</a>
 										</li>
 										<li>
-											<a href="#overlap-top">service</a>
+											<a href="#overlap-top" lang="en" data-lang-token="service">service</a>
 										</li>
 										<li>
-											<a href="#works">portfolio</a>
+											<a href="#works" lang="en" data-lang-token="portfolio">portfolio</a>
 										</li>
 										<li>
-											<a href="#about">about</a>
+											<a href="#about" lang="en" data-lang-token="about">about</a>
 										</li>
 										<li>
-											<a href="#testimonial">Testimonial</a>
+											<a href="#testimonial" lang="en" data-lang-token="testimonials">Testimonial</a>
 										</li>
 										<li>
-											<a href="#skills">Skills</a>
+											<a href="#skills" lang="en" data-lang-token="skills">Skills</a>
 										</li>
 										<li>
-											<a href="#contact">contact</a>
+											<a href="#contact" lang="en" data-lang-token="contact">contact</a>
 										</li>
 									</ul>
 								</nav>
@@ -80,13 +86,13 @@
 						<nav class="main-nav">
 							<ul class="main-menu sf-menu">
 								<li class="current-menu-item">
-									<a href="#bpc-top">home</a>
+									<a href="#bpc-top" lang="en" data-lang-token="home">home</a>
 								</li>
 								<li>
-									<a href="#overlap-top">service</a>
+									<a href="#overlap-top" lang="en" data-lang-token="service">service</a>
 								</li>
 								<li>
-									<a href="#works">portfolio</a>
+									<a href="#works" lang="en" data-lang-token="portfolio">portfolio</a>
 								</li>
 
 
@@ -107,13 +113,16 @@
 						<nav class="main-nav right">
 							<ul class="main-menu sf-menu">
 								<li>
-									<a href="#testimonial">Contact</a>
+									<a href="#contact" lang="en" data-lang-token="contact">Contact</a>
 								</li>
 								<li class="mail">
 									<a href="mailto:info@bpcoders.pl" class="no-action">info@bpcoders.pl</a>
 								</li>
 								<li>
 									<a href="tel:+48570877638" class="no-action">570 877 638</a>
+								</li>
+								<li>
+									<a href="#" class="no-action" onclick="window.lang.change('pl'); return false;">pl</a>
 								</li>
 							</ul>
 						</nav>
@@ -126,7 +135,7 @@
 			<div class="main-content">
 				<section class="bpc-area bpc-area-slider bpc-area-no-space">
 					<a href="#overlap-top" class="bpc-scroll style-01">
-						<p>scroll</p>
+						<p lang="en" data-lang-token="scroll">scroll</p>
 						<p class="ti-mouse-alt"></p>
 					</a>
 					<div class="widget bpc-widget-slider-pro-03">
@@ -163,13 +172,13 @@
 									<div>
 										<div>
 											<p class="fa fa-user-secret"></p>
-											<p>service</p>
+											<p lang="en" data-lang-token="service">service</p>
 										</div>
 									</div>
 								</div>
 								<h3 class="widget-title style-01 text-center">BPCoders</h3>
-								<p class="widget-sub-title style-01 text-center">Creative Studio</p>
-								<p class="short-description text-center">We create high ranking websites that bring brands to life online using the latest responsive website design techniques, clean code and cutting-edge technology.</p>
+								<p class="widget-sub-title style-01 text-center" lang="en" data-lang-token="creative-studio">Creative Studio</p>
+								<p class="short-description text-center" lang="en" data-lang-token="we-create">We create high ranking websites that bring brands to life online using the latest responsive website design techniques, clean code and cutting-edge technology.</p>
 							</header>
 							<div class="widget-content module-intro-01--02">
 								<ul class="row ul-mh ct-list-02">
@@ -180,7 +189,7 @@
 											</div>
 											<div class="entry-content">
 												<h4 class="entry-title style-01">
-												<a href="#">web design</a>
+												<a href="#" lang="en" data-lang-token="web-design">web design</a>
 												</h4>
 											</div>
 										</article>
@@ -193,7 +202,7 @@
 											</div>
 											<div class="entry-content">
 												<h4 class="entry-title style-01">
-												<a href="#">WEB DEVELOPMENT</a>
+												<a href="#" lang="en" data-lang-token="web-development">WEB DEVELOPMENT</a>
 												</h4>
 											</div>
 										</article>
@@ -206,7 +215,7 @@
 											</div>
 											<div class="entry-content">
 												<h4 class="entry-title style-01">
-												<a href="#">Wordpress</a>
+												<a href="#" lang="en" data-lang-token="wordpress">Wordpress</a>
 												</h4>
 											</div>
 										</article>
@@ -219,7 +228,7 @@
 											</div>
 											<div class="entry-content">
 												<h4 class="entry-title style-01">
-												<a href="#">BRANDING DESIGN</a>
+												<a href="#" lang="en" data-lang-token="branding-design">BRANDING DESIGN</a>
 												</h4>
 											</div>
 										</article>
@@ -243,8 +252,8 @@
 									<div class="col-md-5 col-sm-5 col-xs-5 header-text left">
 										<p class="h-line bpc-pull-right"></p>
 										<div class="text-right bpc-pull-right">
-											<h3 class="widget-title style-02">PORTFOLIO</h3>
-											<p class="widget-sub-title">Some latest projects</p>
+											<h3 class="widget-title style-02" lang="en" data-lang-token="portfolio">PORTFOLIO</h3>
+											<p class="widget-sub-title" lang="en" data-lang-token="lastest-projects">Some latest projects</p>
 										</div>
 										<div class="clear"></div>
 									</div>
@@ -254,7 +263,7 @@
 											<div>
 												<div>
 													<p class="fa fa-anchor"></p>
-													<p>works</p>
+													<p lang="en" data-lang-token="works">works</p>
 												</div>
 											</div>
 										</div>
@@ -262,11 +271,11 @@
 									<!-- col-md-2 -->
 									<div class="col-md-5 col-sm-5 col-xs-5 header-navigation right">
 										<div class="masonry-filter">
-											<a href="#" data-val="*" class="active">All Works</a>
-											<a href="#" data-val="1">Web design</a>
-											<a href="#" data-val="2">Branding</a>
-											<a href="#" data-val="3">Photography</a>
-											<a href="#" data-val="4">Other</a>
+											<a href="#" data-val="*" class="active" lang="en" data-lang-token="all-works">All Works</a>
+											<a href="#" data-val="1" lang="en" data-lang-token="web-design">Web design</a>
+											<a href="#" data-val="2" lang="en" data-lang-token="branding">Branding</a>
+											<a href="#" data-val="3" lang="en" data-lang-token="photography">Photography</a>
+											<a href="#" data-val="4" lang="en" data-lang-token="other">Other</a>
 										</div>
 										<!-- masonry-filter -->
 									</div>
@@ -303,7 +312,7 @@
 													<div class="portfolio-intro-details">
 														<div class="pull-left prftl-det">
 															<p>unexpectedrobots.pl</p>
-															<p class="prtfl-cat">Front-end coding</p>
+															<p class="prtfl-cat" lang="en" data-lang-token="front-end-coding">Front-end coding</p>
 														</div>
 														<div class="pull-left prtfl-ico"> <i class="fa fa-picture-o"></i> </div>
 													</div>
@@ -319,7 +328,7 @@
 													<div class="portfolio-intro-details">
 														<div class="pull-left prftl-det">
 															<p>finari.pl</p>
-															<p class="prtfl-cat">Front-end and back-end coding</p>
+															<p class="prtfl-cat" lang="en" data-lang-token="pront-end-coding">Front-end and back-end coding</p>
 														</div>
 														<div class="pull-left prtfl-ico"> <i class="fa fa-picture-o"></i> </div>
 													</div>
@@ -335,7 +344,7 @@
 													<div class="portfolio-intro-details">
 														<div class="pull-left prftl-det">
 															<p>nieczytamlistow.pl</p>
-															<p class="prtfl-cat">Front-end and back-end coding</p>
+															<p class="prtfl-cat" lang="en" data-lang-token="front-end-and-back-end-coding">Front-end and back-end coding</p>
 														</div>
 														<div class="pull-left prtfl-ico"> <i class="fa fa-picture-o"></i> </div>
 													</div>
@@ -351,7 +360,7 @@
 													<div class="portfolio-intro-details">
 														<div class="pull-left prftl-det">
 															<p>solera.pl</p>
-															<p class="prtfl-cat">Front-end and back-end coding</p>
+															<p class="prtfl-cat" lang="en" data-lang-token="front-end-and-back-end-coding">Front-end and back-end coding</p>
 														</div>
 														<div class="pull-left prtfl-ico"> <i class="fa fa-picture-o"></i> </div>
 													</div>
@@ -367,7 +376,7 @@
 													<div class="portfolio-intro-details">
 														<div class="pull-left prftl-det">
 															<p>manhattan-proszkow.pl</p>
-															<p class="prtfl-cat">Front-end coding</p>
+															<p class="prtfl-cat" lang="en" data-lang-token="front-end-coding">Front-end coding</p>
 														</div>
 														<div class="pull-left prtfl-ico"> <i class="fa fa-picture-o"></i> </div>
 													</div>
@@ -383,7 +392,7 @@
 													<div class="portfolio-intro-details">
 														<div class="pull-left prftl-det">
 															<p>unexpectedfitness.pl</p>
-															<p class="prtfl-cat">Front-end coding</p>
+															<p class="prtfl-cat" lang="en" data-lang-token="front-end-coding">Front-end coding</p>
 														</div>
 														<div class="pull-left prtfl-ico"> <i class="fa fa-picture-o"></i> </div>
 													</div>
@@ -399,7 +408,7 @@
 													<div class="portfolio-intro-details">
 														<div class="pull-left prftl-det">
 															<p>karta.turawa-park.com</p>
-															<p class="prtfl-cat">Front-end and backend coding</p>
+															<p class="prtfl-cat" lang="en" data-lang-token="front-end-and-back-end-coding">Front-end and backend coding</p>
 														</div>
 														<div class="pull-left prtfl-ico"> <i class="fa fa-picture-o"></i> </div>
 													</div>
@@ -415,7 +424,7 @@
 													<div class="portfolio-intro-details">
 														<div class="pull-left prftl-det">
 															<p>lddent.pl</p>
-															<p class="prtfl-cat">Front-end and backend coding</p>
+															<p class="prtfl-cat" lang="en" data-lang-token="front-end-and-back-end-coding">Front-end and backend coding</p>
 														</div>
 														<div class="pull-left prtfl-ico"> <i class="fa fa-picture-o"></i> </div>
 													</div>
@@ -431,7 +440,7 @@
 													<div class="portfolio-intro-details">
 														<div class="pull-left prftl-det">
 															<p>atem-tsl.eu</p>
-															<p class="prtfl-cat">Graphic, Front-end coding</p>
+															<p class="prtfl-cat" lang="en" data-lang-token="graphic-and-front-end-coding">Graphic, Front-end coding</p>
 														</div>
 														<div class="pull-left prtfl-ico"> <i class="fa fa-picture-o"></i> </div>
 													</div>
@@ -457,15 +466,15 @@
 							<div class="widget bpc-widget-progress-01">
 								<header class="widget-header meta-header meta-header-half-left">
 									<div class=" header-link left">
-										<p class="short-text bpc-pull-right">We love to make things. Awesome things.</p>
+										<p class="short-text bpc-pull-right" lang="en" data-lang-token="we love">We love to make things. Awesome things.</p>
 										<a href="#" class="bpc-pull-left">
-											<span class="fa fa-diamond">&nbsp;</span>About us
+											<span class="fa fa-diamond">&nbsp;</span><span lang="en" data-lang-token="about-us">About us</span>
 										</a>
 										<div class="clear"></div>
 									</div>
 								</header>
 								<div class="widget-content">
-									<p class="text-right">
+									<p class="text-right" lang="en" data-lang-token="were-passionate-about">
 										We’re passionate about our craft. That’s why this internship is a hands-on exploration of creativity and design.
 										We believe in learning by doing. Our aim is to nurture and grow bright young minds from the get-go, because that’s how our industry will thrive.
 									</p>
@@ -489,7 +498,7 @@
 													<div>
 														<div>
 															<p class="fa fa-stumbleupon"></p>
-															<p>why us</p>
+															<p lang="en" data-lang-token="why-us">why us</p>
 														</div>
 													</div>
 												</div>
@@ -498,8 +507,8 @@
 											<div class="col-md-5 col-sm-5 col-xs-5 header-text right">
 												<p class="h-line bpc-pull-left"></p>
 												<div class="text-left bpc-pull-left">
-													<h3 class="widget-title style-02">We live</h3>
-													<p class="widget-sub-title">&amp; breathe digital</p>
+													<h3 class="widget-title style-02" lang="en" data-lang-token="we-live">We live</h3>
+													<p class="widget-sub-title" lang="en" data-lang-token="breathe-digital">&amp; breathe digital</p>
 												</div>
 												<div class="clear"></div>
 											</div>
@@ -510,7 +519,7 @@
 									<!-- container-->
 								</header>
 								<div class="widget-content">
-									<p class="description">WE are a full-service digital agency. With a focus on user experience and strategy, we design and develop web and mobile experiences for companies at every stage. From early-stage companies looking to build their product’s first iteration, to publicly-traded companies looking for a refresh, we believe great design can make a good idea even better.</p>
+									<p class="description" lang="en" data-lang-token="we-are-a-fill-service">WE are a full-service digital agency. With a focus on user experience and strategy, we design and develop web and mobile experiences for companies at every stage. From early-stage companies looking to build their product’s first iteration, to publicly-traded companies looking for a refresh, we believe great design can make a good idea even better.</p>
 								</div>
 								<!-- widget-content -->
 							</div>
@@ -539,16 +548,16 @@
 									<div class="entry-content">
 										<header class="entry-header">
 											<h4 class="entry-title style-10">
-											<a href="#">Why We Love Open Source Software</a>
+											<a href="#" lang="en" data-lang-token="why-we-love-open">Why We Love Open Source Software</a>
 											</h4>
-											<p class="entry-sub-title">
+											<p class="entry-sub-title" lang="en" data-lang-token="it-means-you-can">
 												It means you can use our software for free!
 											</p>
 										</header>
-										<p>As a web development agency, it’s our job to deliver clients websites that are good-looking, but also manageable. After all, how effective can a website be if it doesn’t function the way it’s intended to?
+										<p lang="en" data-lang-token="as-a-we-development-agency">As a web development agency, it’s our job to deliver clients websites that are good-looking, but also manageable. After all, how effective can a website be if it doesn’t function the way it’s intended to?
 										</p>
-										<p>Today we are better than BPCoders was yesterday!</p>
-										<a href="#" class="more-link style-01">Coming soon!</a>
+										<p lang="en" data-lang-token="today-we-are-better">Today we are better than BPCoders was yesterday!</p>
+										<a href="#" class="more-link style-01" lang="en" data-lang-token="comming-soon">Coming soon!</a>
 									</div>
 								</article>
 							</div>
@@ -566,10 +575,10 @@
 												</div>
 											</div>
 											<div class="entry-content">
-												<h4 class="entry-title style-11">
+												<h4 class="entry-title style-11" lang="en" data-lang-token="user-exoerience-design">
 												user experience design.
 												</h4>
-												<p>Great design starts with putting people first. Work with us and you’ll benefit from a collaborative user experience design approach that promises improved usability, accessibility and efficiency.
+												<p lang="en" data-lang-token="great-design-starts">Great design starts with putting people first. Work with us and you’ll benefit from a collaborative user experience design approach that promises improved usability, accessibility and efficiency.
 												</p>
 											</div>
 										</article>
@@ -583,10 +592,10 @@
 												</div>
 											</div>
 											<div class="entry-content">
-												<h4 class="entry-title style-11">
+												<h4 class="entry-title style-11" lang="en" data-lang-token="pixel-perfect-development">
 												pixel-perfect development.
 												</h4>
-												<p>We’re not joking when we say we’ve considered every detail. That’s right, down to each individual pixel. When you see a design, this is exactly how your website will look, complete with animation and effects.
+												<p lang="en" data-lang-token="were-not-joking-when">We’re not joking when we say we’ve considered every detail. That’s right, down to each individual pixel. When you see a design, this is exactly how your website will look, complete with animation and effects.
 												</p>
 											</div>
 										</article>
@@ -600,10 +609,10 @@
 												</div>
 											</div>
 											<div class="entry-content">
-												<h4 class="entry-title style-11">
+												<h4 class="entry-title style-11" lang="en" data-lang-token="complete-support">
 												complete support.
 												</h4>
-												<p>Once your website is launched it’s not goodbye. We’re here to support any changes, assess performance and discuss future improvements, and we're always at the end of the phone if you need us.
+												<p lang="en" data-lang-token="once-your-website-is-launched">Once your website is launched it’s not goodbye. We’re here to support any changes, assess performance and discuss future improvements, and we're always at the end of the phone if you need us.
 												</p>
 											</div>
 										</article>
@@ -622,13 +631,13 @@
 					<div class="widget bpc-widget-slick-01" id="testimonial">
 						<header class="widget-header text-center">
 							<img src="images/clients/1.png" alt="">
-							<h3 class="widget-title style-02">WHAT OUR CLIENTS SAY</h3>
-							<p class="widget-sub-title style-02">Clients Testimonial</p>
+							<h3 class="widget-title style-02" lang="en" data-lang-token="what-our-clients-say">WHAT OUR CLIENTS SAY</h3>
+							<p class="widget-sub-title style-02" lang="en" data-lang-token="clients-testimonial">Clients Testimonial</p>
 						</header>
 						<div class="widget-content module-slick-01--01">
 							<div class="slick-01 slick-content">
 								<div class="item">
-									<div class="item-text">
+									<div class="item-text" lang="en" data-lang-token="the-communication-was-strict-and-perfect">
 										The communication was strict and perfect, the cooperation was flawless and the project was highly professional.
 									</div>
 									<div class="item-rating">
@@ -644,7 +653,7 @@
 								</div>
 								<!-- item -->
 								<div class="item">
-									<div class="item-text">
+									<div class="item-text" lang="en" data-lang-token="this-company-have-best-employers">
 										This company have best employers, they always pull theirs weight. It is characteristic of them to do everything quickly and on time. My website looks better than I expected. Everything work perfectly. The employers are imaginative, conscientious, responsible, reliable and well-organised. This firm come up to my expectations. I know, that I can always rely on this company. Without doubt I will recommend.
 									</div>
 									<div class="item-rating">
@@ -685,7 +694,7 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-md-5 col-sm-5 col-xs-5 header-link left">
-											<p class="short-text bpc-pull-right">So many skills in one place.</p>
+											<p class="short-text bpc-pull-right" lang="en" data-lang-token="so-many-skills-in">So many skills in one place.</p>
 											<div class="clear"></div>
 										</div>
 										<!-- col-md-5 -->
@@ -694,7 +703,7 @@
 												<div>
 													<div>
 														<p class="fa fa-code"></p>
-														<p>Tech</p>
+														<p lang="en" data-lang-token="tech">Tech</p>
 													</div>
 												</div>
 											</div>
@@ -704,7 +713,7 @@
 											<p class="h-line bpc-pull-left"></p>
 											<div class="text-left bpc-pull-left">
 												<h3 class="widget-title style-02">&nbsp;</h3>
-												<p class="widget-sub-title">Tools which we use.</p>
+												<p class="widget-sub-title" lang="en" data-lang-token="tools-which-we-use">Tools which we use.</p>
 											</div>
 											<div class="clear"></div>
 										</div>
@@ -723,7 +732,7 @@
 											</div>
 											<div class="entry-content">
 												<header>
-													<p class="entry-sub-title style-01">front-end framework</p>
+													<p class="entry-sub-title style-01" lang="en" data-lang-token="front-end-framework">front-end framework</p>
 													<h4 class="entry-title style-07">
 													<a href="https://angular.io/" target="_blank">Angular2</a>
 													</h4>
@@ -743,7 +752,7 @@
 													</div>
 													<div class="entry-content">
 														<header>
-															<p class="entry-sub-title style-01">The PHP Framework</p>
+															<p class="entry-sub-title style-01" lang="en" data-lang-token="the-php-framework">The PHP Framework</p>
 															<h4 class="entry-title style-08">
 															<a href="https://laravel.com">Laravel</a>
 															</h4>
@@ -760,7 +769,7 @@
 													</div>
 													<div class="entry-content">
 														<header>
-															<p class="entry-sub-title style-01">Content Manage System</p>
+															<p class="entry-sub-title style-01" lang="en" data-lang-token="content-manage-system">Content Manage System</p>
 															<h4 class="entry-title style-08">
 															<a href="https://wordpress.org/">WordPress</a>
 															</h4>
@@ -775,7 +784,7 @@
 													</div>
 													<div class="entry-content">
 														<header>
-															<p class="entry-sub-title style-01">Other tools like</p>
+															<p class="entry-sub-title style-01" lang="en" data-lang-token="other-tools-like">Other tools like</p>
 															<a target="_blank" href="https://webpack.github.io/">Webpack</a>,
 															<a target="_blank" href="https://www.sublimetext.com/">Sublime Text</a>,
 															<a target="_blank" href="https://jquery.com/">jQuery</a>,
@@ -808,8 +817,8 @@
 								<div class="contact-icon" id="form">
 									<i id="fa" class="fa fa-comments" aria-hidden="true"></i>
 								</div>
-								<h3 class="widget-title style-02">How can we help?</h3>
-								<p class="widget-sub-title style-02">No matter the size of your project, we'd love to hear from you! Get in touch via our website or call us on <strong>+48 570 877 638</strong>.</p>
+								<h3 class="widget-title style-02" lang="en" data-lang-token="how-we-can-help">How can we help?</h3>
+								<p class="widget-sub-title style-02" lang="en" data-lang-token="no-matter-the-size-of-your-project">No matter the size of your project, we'd love to hear from you! Get in touch via our website or call us on <strong>+48 570 877 638</strong>.</p>
 							</header>
 							<div class="widget-content">
 								<form class="bpc-form bpc-form-01 " action="https://formspree.io/fasolqa@gmail.com" method="POST">
@@ -878,7 +887,7 @@
 							</div>
 							<!-- col-md-2 -->
 							<div class="col-md-5 col-sm-5 col-xs-5 text-right">
-								<a href="#bpc-top" class="bpc-scroll style-02">Go to top</a>
+								<a href="#bpc-top" class="bpc-scroll style-02" lang="en" data-lang-token="go-to-top">Go to top</a>
 							</div>
 							<!-- col-md-5 -->
 						</div>
@@ -895,7 +904,6 @@
 		<script src="https://gstatic.com/firebasejs/4.0.0/firebase.js"></script>
 		<script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
 		<!-- build:js -->
-		<script src="js/jquery-2.2.4.min.js"></script>
 		<script src="js/superfish.min.js"></script>
 		<script src="js/jquery.sliderPro.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>

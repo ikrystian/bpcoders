@@ -1,0 +1,11 @@
+{
+	"token": {
+		"title": "BPCoders - prócz aplikacji umiemy także salto",
+		"home":"strona główna",
+	},
+	"regex": [
+		["Budget", "งบประมาณ"],
+		["^Something at start of text", ""],
+		["This will be case insensitive", "i", ""]
+	]
+}
